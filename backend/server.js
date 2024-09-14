@@ -68,7 +68,7 @@ app.use(express.json());
 
 
 // Replace <db_password> with your actual password
-const mongoAtlasUri = "mongodb+srv://mirza:new@cluster0.ugujv.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
+const mongoAtlasUri = "";
 
 mongoose.connect(mongoAtlasUri)
   .then(() => {
