@@ -31,24 +31,27 @@ bash
 git clone https://github.com/AliSaif541/MERN-Trading-App.git
 cd MERN-Trading-App
 
-### Install Dependecies:
+## Install Dependencies:
 
-FrontEnd
+### Install frontend dependencies:
 
+```bash
 cd frontend/my-app
-
 npm install
 
 
-Backend
+### Install Backend Dependencies:
 
+To install the backend dependencies, navigate to the `server` directory and run:
+
+```bash
 cd backend
-
 npm install
 
-### Configure Environment Variables:
 
-MONGODB_URI: 
+## Configure Environment Variables:
+
+## MONGODB_URI: 
 
 MONGODB_URI=mongodb+srv:/username:password@cluster.mongodb.net/mydatabase
 
