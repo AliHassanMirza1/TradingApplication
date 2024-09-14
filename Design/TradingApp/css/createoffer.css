@@ -1,0 +1,98 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9eff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #cfd9df 10%, #e2ebf0 100%);
+}
+
+.create-offer-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #607D8B;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #455A64;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+h1 {
+    color: #455A64;
+    font-weight: 300;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    color: #455A64;
+    font-weight: 500;
+}
+
+input[type="number"],
+textarea,
+select {
+    padding: 15px;
+    border: 2px solid #CFD8DC;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #607D8B;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #FF5722;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #F4511E;
+}
+
+textarea {
+    resize: vertical;
+}

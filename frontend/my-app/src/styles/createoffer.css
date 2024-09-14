@@ -1,0 +1,55 @@
+.create-offer-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    display: block;
+    margin-bottom: 20px;
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#create-offer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-offer-form h1 {
+    color: #333;
+    text-align: center;
+}
+
+#create-offer-form label {
+    margin-top: 10px;
+    color: #666;
+}
+
+#create-offer-form input,
+#create-offer-form select,
+#create-offer-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}

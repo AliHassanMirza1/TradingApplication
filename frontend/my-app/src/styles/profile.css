@@ -1,0 +1,406 @@
+body,
+html {
+    margin: 0;
+    padding: 0,20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    /* This ensures elements are spaced out fully */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.profile-content {
+    padding: 20px;
+    /* Adds padding around the main content area */
+    box-sizing: border-box;
+    /* Ensures padding doesn't increase the overall width */
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.user-username {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.cash-counter {
+    font-size: 18px;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trade-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    /* Very light background */
+    border-bottom: 1px solid #eaeaea;
+    /* Subtle separation */
+    padding: 15px;
+    margin-bottom: 8px;
+    /* Tight layout spacing */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.trade-item:hover {
+    background-color: #eaeaea;
+    /* Slight interaction feedback */
+}
+
+.trade-image {
+    width: 60px;
+    /* Adjusted for a cleaner look */
+    height: 60px;
+    border-radius: 50%;
+    /* Round images for a modern, friendly appearance */
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.trade-info {
+    flex-grow: 1;
+}
+
+.trade-title {
+    font-size: 18px;
+    /* Clear, readable size */
+    color: #333;
+    /* Strong contrast for readability */
+    margin: 0 0 5px 0;
+    /* Clean spacing around the title */
+}
+
+.trade-description {
+    font-size: 14px;
+    /* Subtle, unobtrusive size */
+    color: #666;
+    /* Lighter for hierarchy and simplicity */
+    margin: 0;
+    /* Minimal spacing */
+}
+
+.trade-conditions {
+    font-size: 14px;
+    /* Consistent with the description for a uniform look */
+    color: #666;
+    margin-top: 10px;
+    /* Space from the description to the conditions */
+}
+
+.condition-badge {
+    background-color: #eaeaea;
+    /* Subtle background */
+    color: #333;
+    /* Readable, but not overpowering */
+    padding: 3px 7px;
+    /* Just enough space to be clickable without bulk */
+    border-radius: 15px;
+    /* Pill shape for a modern touch */
+    display: inline-block;
+    margin-right: 5px;
+    /* Space between badges */
+}
+
+.send-offer-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-offer-btn:hover {
+    background-color: #0056b3;
+}
+
+.see-trade-status-btn {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    display: inline-flex;
+    /* Aligns the text and the arrow icon */
+    align-items: center;
+    /* Center the content vertically */
+    gap: 5px;
+    /* Adds a small gap between the text and the arrow icon */
+    font-weight: bold;
+    /* Makes the button text bold */
+}
+
+.see-trade-status-btn:hover {
+    background-color: #367B37;
+    /* Darker green on hover */
+}
+
+.trade-action {
+    /* This will ensure the button aligns to the right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Adjust the space below the user info as needed */
+}
+
+.user-image {
+    width: 100px;
+    /* Size of the image, adjust as needed */
+    height: 100px;
+    /* Ensure the width and height are equal for a perfect circle */
+    border-radius: 50%;
+    /* This makes the image round */
+    margin-right: 20px;
+    /* Space between the image and the name */
+    object-fit: cover;
+    /* Ensures the image covers the space properly without distortion */
+}
+
+h1 {
+    margin: 0;
+    /* Removes default margin to align better with the image */
+    font-size: 24px;
+    /* Adjust according to your design */
+}
+
+
+.offers-sent-container {
+        display: flex;
+        flex-direction: column;
+        }
+.offer-tile {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    /* Subdued text color for better readability */
+    background-color: #f8f8f8;
+    /* Very light background for each tile */
+    border-bottom: 1px solid #eaeaea;
+    /* Light border for subtle separation */
+    padding: 15px;
+    margin-bottom: 8px;
+    /* Reduced margin for a tighter layout */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.offer-tile:hover {
+    background-color: #eaeaea;
+    /* Slightly darker background on hover */
+}
+
+.offer-image-container {
+    width: 60px;
+    /* Smaller image for a cleaner look */
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.offer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers the info vertically for a balanced look */
+}
+
+.offer-title {
+    font-size: 18px;
+    /* Slightly larger title for emphasis */
+    margin: 0 0 5px 0;
+    /* Removes default margin and adds a small space below the title */
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.offer-description {
+    font-size: 14px;
+    /* Smaller font size for a clean, uncluttered look */
+    margin: 0;
+    /* Removes default margin */
+    color: #666;
+    /* Lighter text for subtlety */
+}
+
+.offer-status {
+    font-size: 16px;
+    /* Appropriate size for visibility without overwhelming */
+    color: #333;
+    /* Keeps the color consistent with the tile's text for a unified look */
+    font-weight: normal;
+    /* Avoids bold to maintain a light, minimalist feel */
+    margin-left: auto;
+    /* Aligns the status to the right */
+}
+
+.update-password-btn {
+    background-color: #f8f8f8;
+    /* Light background color */
+    color: #333;
+    /* Text color */
+    font-size: 14px;
+    /* Appropriate font size */
+    padding: 8px 16px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 20px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor change to indicate clickability */
+    margin-top: 10px;
+    /* Space from the username */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.create-offer-btn {
+    background-color: #3b68fa;
+    /* Light background color */
+    color: #ffffff;
+    /* Text color */
+    font-size: 14px;
+    /* Appropriate font size */
+    padding: 8px 16px;
+    /* Padding around the text */
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 20px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor change to indicate clickability */
+    margin-top: 10px;
+    /* Space from the username */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.update-password-btn:hover {
+    background-color: #eaeaea;
+    /* Slightly darker on hover for feedback */
+    color: #000;
+    /* Darker text color on hover */
+}
+
+.create-offer-btn:hover {
+    background-color: #14018d;
+    /* Slightly darker on hover for feedback */
+    color: #ffffff;
+    /* Darker text color on hover */
+}
+
+
+.inventory-tile {
+    background-color: #f8f8f8;
+    /* Light background for the tile */
+    border: 1px solid #ddd;
+    /* Subtle border for definition */
+    padding: 15px;
+    /* Padding for internal spacing */
+    margin-bottom: 10px;
+    /* Margin for spacing between tiles */
+    border-radius: 5px;
+    /* Slightly rounded corners for a modern look */
+}
+
+.inventory-title {
+    margin: 0 0 10px 0;
+    /* Space below the title */
+    color: #333;
+    /* Dark color for emphasis */
+    font-size: 18px;
+    /* Clear, readable size */
+}
+
+.inventory-description {
+    margin: 0 0 10px 0;
+    /* Space below the description */
+    color: #666;
+    /* Lighter color for hierarchy */
+    font-size: 14px;
+    /* Subtle, unobtrusive size */
+}
+
+.inventory-quantity {
+    font-size: 14px;
+    /* Matching the description for consistency */
+    color: #333;
+    /* Darker color for important info */
+}

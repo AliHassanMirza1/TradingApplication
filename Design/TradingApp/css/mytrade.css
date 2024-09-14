@@ -1,0 +1,126 @@
+/* General styles for the page */
+.trade-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.trade-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.trade-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.trade-details {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.accepting-conditions {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.accepting-conditions li {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Styles for the offers section */
+.offers-section {
+    margin-top: 30px;
+}
+
+.offer {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.offer-top {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name,
+.user-username {
+    margin: 0;
+}
+
+.commodity-name {
+    font-weight: bold;
+}
+
+.offer-details {
+    margin-top: 10px;
+}
+
+.commodity-quantity,
+.offer-cash {
+    margin: 5px 0;
+}
+
+.offer-actions {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.offer-accept-btn,
+.offer-reject-btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.offer-accept-btn {
+    background-color: #28a745;
+}
+
+.offer-reject-btn {
+    background-color: #dc3545;
+}
+
+.offer-accept-btn:hover {
+    background-color: #218838;
+}
+
+.offer-reject-btn:hover {
+    background-color: #c82333;
+}

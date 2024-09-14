@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Offer - TradeBiz</title>
+    <link rel="stylesheet" href="../css/submitoffer.css">
+</head>
+
+<body>
+    <div class="create-offer-container">
+        <a href="#" class="back-link">← Back</a>
+        <form id="create-offer-form">
+            <h1>Submit Your Offer</h1>
+            <label for="commodity">Commodity:</label>
+            <select name="commodity" id="commodity">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="cash">Cash Offer ($):</label>
+            <input type="number" id="cash" name="cash" min="1" step="any" required>
+
+
+
+            <button type="submit" class="submit-btn">Submit Offer</button>
+        </form>
+    </div>
+</body>
+
+</html>

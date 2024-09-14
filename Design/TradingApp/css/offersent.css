@@ -1,0 +1,176 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.trade-detail-container {
+    max-width: 600px;
+    /* Smaller container width */
+    margin: 20px auto;
+    padding: 15px;
+    /* Reduced padding */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    display: block;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    /* Smaller font size */
+}
+
+.trade-title {
+    margin-bottom: 15px;
+    /* Reduced margin */
+    color: #333;
+    font-size: 1.5rem;
+    /* Adjusted font size */
+}
+
+.trade-image {
+    width: 100%;
+    /* Keeps image responsive */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    /* Reduced margin */
+}
+
+.trade-details,
+.accepting-conditions,
+.profile-link {
+    margin-bottom: 15px;
+    /* Reduced margin */
+    font-size: 0.9rem;
+    /* Adjusted font size for details */
+}
+
+.accepting-conditions {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.offer-trade-btn {
+    display: block;
+    width: auto;
+    /* Adjust width for button */
+    padding: 8px 10px;
+    /* Reduced padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    font-size: 0.9rem;
+    /* Adjusted font size */
+}
+
+.offer-trade-btn:hover {
+    background-color: #45a049;
+}
+
+.profile-link {
+    display: block;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    /* Adjusted font size */
+}
+
+.offers-section {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+    /* Make the tile faded */
+    transition: opacity 0.3s;
+}
+.offer:hover {
+    opacity: 1;
+    /* Tile becomes less faded on hover for emphasis */
+}
+
+.offer-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-info h4,
+.user-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.offer-details {
+    margin-bottom: 10px;
+}
+
+.commodity-name,
+.commodity-quantity,
+.offer-cash {
+    margin: 4px 0;
+}
+
+.offer-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.offer-actions button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.offer-actions button:hover {
+    background-color: #e0e0e0;
+}
+
+.offer-accept-btn {
+    color: #4CAF50;
+}
+
+.offer-reject-btn {
+    color: #F44336;
+}
+
+.offer-submitted {
+    margin-top: 10px;
+    font-size: 1.5em;
+    /* Larger font size for "Offer Submitted" */
+    color: #4CAF50;
+    /* Green color to indicate successful submission */
+    font-weight: bold;
+}

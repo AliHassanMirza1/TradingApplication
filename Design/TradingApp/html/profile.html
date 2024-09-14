@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Profile - TradeBiz</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+        <div class="right-menu">
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="profile-content">
+        <div class="top-section">
+            <div class="user-info">
+                <img src="../userImage.jpg" alt="User Image" class="user-image">
+                <div>
+                    <h1>User's Name</h1>
+                    <p class="user-username">@username</p>
+                    <!-- Update Password Button -->
+                    <button class="update-password-btn">Update Password</button>
+                    <button class="create-offer-btn">Create Trade Offer</button>
+                </div>
+            </div>
+            <div class="cash-counter">
+                <p>Cash: $1,000</p>
+            </div>
+        </div>
+
+        <h2>My Trades</h2>
+        <div class="trade-item">
+            <img src="../tradeImage.jpg" alt="Trade Image" class="trade-image">
+            <div class="trade-info">
+                <h3 class="trade-title">Trade Title</h3>
+                <p class="trade-description">This is a brief description of the trade.</p>
+                <div class="trade-conditions">
+                    Conditions:
+                    <span class="condition-badge">Condition 1</span>
+                    <span class="condition-badge">Condition 2</span>
+                </div>
+            </div>
+            <!-- Container for the action button -->
+            <div class="trade-action">
+                <button class="see-trade-status-btn">See Trade Status →</button>
+            </div>
+        </div>
+        <div class="trade-item">
+            <img src="../tradeImage.jpg" alt="Trade Image" class="trade-image">
+            <div class="trade-info">
+                <h3 class="trade-title">Trade Title</h3>
+                <p class="trade-description">This is a brief description of the trade.</p>
+                <div class="trade-conditions">
+                    Conditions:
+                    <span class="condition-badge">Condition 1</span>
+                    <span class="condition-badge">Condition 2</span>
+                </div>
+            </div>
+            <!-- Container for the action button -->
+            <div class="trade-action">
+                <button class="see-trade-status-btn">See Trade Status →</button>
+            </div>
+        </div>
+        <div class="trade-item">
+            <img src="../tradeImage.jpg" alt="Trade Image" class="trade-image">
+            <div class="trade-info">
+                <h3 class="trade-title">Trade Title</h3>
+                <p class="trade-description">This is a brief description of the trade.</p>
+                <div class="trade-conditions">
+                    Conditions:
+                    <span class="condition-badge">Condition 1</span>
+                    <span class="condition-badge">Condition 2</span>
+                </div>
+            </div>
+            <!-- Container for the action button -->
+            <div class="trade-action">
+                <button class="see-trade-status-btn">See Trade Status →</button>
+            </div>
+        </div>
+        
+
+        <h2>Offers Sent</h2>
+        <div class="offers-sent-container">
+            <a href="link-to-offer-details.html" class="offer-tile">
+                <div class="offer-image-container">
+                    <img src="../offerImage.jpg" alt="Offer Image" class="offer-image">
+                </div>
+                <div class="offer-info">
+                    <h3 class="offer-title">Offer Title</h3>
+                    <p class="offer-description">This is a brief description of the offer.</p>
+                </div>
+                <div class="offer-status">SENT</div>
+            </a>
+            <!-- Repeat for other offers -->
+        </div>
+        <div class="offers-sent-container">
+            <a href="link-to-offer-details.html" class="offer-tile">
+                <div class="offer-image-container">
+                    <img src="../offerImage.jpg" alt="Offer Image" class="offer-image">
+                </div>
+                <div class="offer-info">
+                    <h3 class="offer-title">Offer Title</h3>
+                    <p class="offer-description">This is a brief description of the offer.</p>
+                </div>
+                <div class="offer-status">SENT</div>
+            </a>
+            <!-- Repeat for other offers -->
+        </div>
+        <!-- Display account details here -->
+
+       
+        <h2>Inventory of Items</h2>
+        <div class="inventory-tile">
+            <h3 class="inventory-title">Item Title</h3>
+            <p class="inventory-description">This is a brief description of the inventory item, providing essential details that
+                the user should know.</p>
+            <p class="inventory-quantity">Quantity: <span>5</span></p>
+        </div>
+    </section>
+</body>
+
+</html>
