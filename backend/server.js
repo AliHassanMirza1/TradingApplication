@@ -67,18 +67,22 @@ app.use(cors());
 app.use(express.json());
 
 
-mongoose.connect("mongodb://localhost:27017/OMMA", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log("Connected to Database");
-  server.listen(8000, () => {
-    console.log("Server is running on port 8000");
+// Replace <db_password> with your actual password
+const mongoAtlasUri = "mongodb+srv://mirza:new@cluster0.ugujv.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
+
+mongoose.connect(mongoAtlasUri)
+  .then(() => {
+    console.log("Connected to Database");
+    server.listen(8000, () => {
+      console.log("Server is running on port 8000");
+    });
+  })
+  .catch((error) => {
+    console.error("Database connection failed:", error);
+    process.exit();
   });
-}).catch((error) => {
-  console.error("Database connection failed:", error);
-  process.exit();
-});
+
+
 
 app.use('/', authRoutes);
 app.use('/user', userRoutes);
