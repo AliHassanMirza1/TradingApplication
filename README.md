@@ -34,22 +34,28 @@ cd MERN-Trading-App
 ### Install Dependecies:
 
 FrontEnd
+
 cd frontend/my-app
+
 npm install
 
+
 Backend
+
 cd backend
+
 npm install
 
 ### Configure Environment Variables:
 
-MONGODB_URI: MongoDB connection string
+MONGODB_URI: 
 
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/mydatabase
+MONGODB_URI=mongodb+srv:/username:password@cluster.mongodb.net/mydatabase
 
 ### Run the application
 
 In the Frontend and Backend:
+
 npm start
 
 ### Access the application:
