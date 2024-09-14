@@ -31,11 +31,12 @@ bash
 git clone https://github.com/AliSaif541/MERN-Trading-App.git
 cd MERN-Trading-App
 
-## Install Dependencies:
+## Install and Configure:
 
-### Install frontend dependencies:
+
 
 ```bash
+### Install FrontEnd Dependencies
 cd frontend/my-app
 npm install
 
